@@ -1,0 +1,144 @@
+/* General Styles */
+:root {
+    --dsr-main: #4d6bfe;
+    --dsr-main-2: rgba(77, 107, 254, 0.4);
+    --dsr-main-3: rgba(77, 107, 254, 0.2);
+    --dsr-bg: #ffffff;
+    --dsr-text-0: #000000;
+    --dsr-text-1: #1a1a1a;
+    --dsr-text-2: #4a4a4a;
+    --dsr-text-3: #6b6b6b;
+    --dsr-border-1: #dce0e9;
+    --dsr-border-2: #eaeaea;
+    --dsr-button-main-bg: var(--dsr-main);
+    --dsr-button-main-bg-hover: #4166d5;
+    --dsr-button-second-bg: var(--dsr-main-3);
+  }
+  
+  body {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Open Sans, sans-serif;
+    background-color: var(--dsr-bg);
+    color: var(--dsr-text-1);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: var(--dsr-main);
+  }
+  
+  /* Buttons */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between buttons */
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    width: 200px; /* Fixed width for buttons */
+    text-align: center;
+  }
+  
+  .btn-primary {
+    background-color: var(--dsr-button-main-bg);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--dsr-button-main-bg-hover);
+  }
+  
+  .btn-secondary {
+    background-color: var(--dsr-button-second-bg);
+    color: var(--dsr-main);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--dsr-main-2);
+  }
+  
+  /* Forms */
+  .form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  input[type="text"],
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--dsr-border-1);
+    border-radius: 5px;
+  }
+  
+  /* Chat Window */
+  .chat-window {
+    border: 1px solid var(--dsr-border-2);
+    border-radius: 10px;
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .bot-message {
+    background-color: var(--dsr-main-3);
+    color: var(--dsr-text-1);
+  }
+  
+  .user-message {
+    background-color: var(--dsr-main);
+    color: white;
+    text-align: right;
+  }
+  
+  .status-message {
+    color: var(--dsr-text-2);
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
