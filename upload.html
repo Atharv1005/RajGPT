@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Assignments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="assets/logo.jpg" alt="Logo" class="logo">
+      <h1>Upload Assignments</h1>
+    </header>
+    <main>
+      <form id="upload-form" class="form">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" placeholder="Enter subject (e.g., DSBDA)" required>
+        
+        <label for="assignment-number">Assignment Number:</label>
+        <input type="text" id="assignment-number" placeholder="Enter assignment number" required>
+        
+        <label for="file-input">Upload File:</label>
+        <input type="file" id="file-input" accept=".pdf" required>
+        
+        <button type="submit" class="btn btn-primary">Upload</button>
+      </form>
+      <p id="upload-status" class="status-message"></p>
+    </main>
+    <footer>
+      <a href="index.html" class="btn btn-secondary">Back to Home</a>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
